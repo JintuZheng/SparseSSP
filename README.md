@@ -71,7 +71,7 @@ The final path tree is like:
 
 Write a configuration refer to the demo file `configs/sparse/repmode_3e2d_sr8.py`. Config is written on mmengine style.
 
-> **Hints**: Demo config has no lr scheduler and but it supports the lr scheduler in `dist_train.py`.
+> **Hints**: Demo config has no lr scheduler but it supports the lr scheduler in `dist_train.py`.
 
 Multiple GPUs training:
 
@@ -103,7 +103,7 @@ Single GPU testing:
 python tools/dist_test.py --config configs/sparse/repmode_3e2d_sr8.py --gpu_num 1 --checkpoint_path ./demo.pth
 ```
 
-> **Hint**: The best checkpoint is under the `./work_dirs/xxx` if you follow STEP3 to train a model, fill it to `--checkpoint_path`.
+> **Hints**: The best checkpoint is under the `./work_dirs/xxx` if you follow STEP3 to train a model, fill it to `--checkpoint_path`.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
