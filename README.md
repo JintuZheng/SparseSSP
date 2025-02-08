@@ -50,7 +50,7 @@ one_file_data_folder = './data' # the folder stores the `.pth` file
 target_unpacked_data_path = './data/unpacked' # the folder for each set.
 ```
 
-Then unpack the pth files:
+Then unpack all `.pth` files:
 ```bash
 python ./tools/data_unpacked.py
 ```
@@ -71,7 +71,7 @@ The final path tree is like:
 
 Write a configuration refer to the demo file `configs/sparse/repmode_3e2d_sr8.py`. Config is written on mmengine style.
 
-> **Hints**: Demo config has no lr scheduler but it supports the lr scheduler in `dist_train.py`.
+> **Hints**: Demo config has no lr scheduler and but it supports the lr scheduler in `dist_train.py`.
 
 Multiple GPUs training:
 
@@ -103,7 +103,7 @@ Single GPU testing:
 python tools/dist_test.py --config configs/sparse/repmode_3e2d_sr8.py --gpu_num 1 --checkpoint_path ./demo.pth
 ```
 
-> **Hints**: The best checkpoint is under the `./work_dirs/xxx` if you follow STEP3 to train a model, fill it to `--checkpoint_path`.
+> **Hint**: The best checkpoint is under the `./work_dirs/xxx` if you follow STEP3 to train a model, fill it to `--checkpoint_path`.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -137,6 +137,6 @@ If it is helpful to your research, please consider citing the following papers:
 - **FNet**, accpeted to Nature Methods: [offical repo](https://github.com/AllenCellModeling/pytorch_fnet/) | [paper](https://www.nature.com/articles/s41592-018-0111-2)
 
 ## Contact
-Fell free to mailto zhengjintu22@mails.ucas.ac.cn if any questions. The `jt.zheng@siat.ac.cn` in paper is recycled from my org. now.
+Feel free to mailto zhengjintu22@mails.ucas.ac.cn if any questions. The `jt.zheng@siat.ac.cn` in paper is recycled from my org. now.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
